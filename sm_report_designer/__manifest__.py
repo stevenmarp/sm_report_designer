@@ -3,10 +3,12 @@
     'name': 'Report Designer - Word & Excel Template Engine',
     'version': '19.0.3.0.0',
     'category': 'Productivity',
-    'summary': 'Design Odoo reports from Word (.docx) and Excel (.xlsx) templates — no developer needed',
+    'summary': 'Design Odoo 19 reports from Word (.docx) and Excel (.xlsx) templates — no developer needed',
     'description': """
-Report Designer - Word & Excel Template Engine
-===============================================
+Report Designer - Word & Excel Template Engine (Odoo 19)
+========================================================
+
+Fully compatible with **Odoo 19** Community and Enterprise.
 
 Let functional users create professional reports without coding.
 Upload a Word or Excel template, map placeholders to Odoo fields,
