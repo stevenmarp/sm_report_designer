@@ -1,5 +1,5 @@
 =========================================================
-Report Designer — Word & Excel Template Engine for Odoo 18
+Report Designer — Word & Excel Template Engine for Odoo 19
 =========================================================
 
 .. contents:: Table of Contents

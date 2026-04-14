@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Report Designer - Word & Excel Template Engine',
-    'version': '18.0.3.0.0',
+    'version': '19.0.3.0.0',
     'category': 'Productivity',
     'summary': 'Design Odoo reports from Word (.docx) and Excel (.xlsx) templates — no developer needed',
     'description': """
