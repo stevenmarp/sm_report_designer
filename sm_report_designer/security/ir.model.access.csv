@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sm_report_template_user,sm.report.template.user,model_sm_report_template,group_report_designer_user,1,0,0,0
+access_sm_report_template_manager,sm.report.template.manager,model_sm_report_template,group_report_designer_manager,1,1,1,1
+access_sm_report_template_field_user,sm.report.template.field.user,model_sm_report_template_field,group_report_designer_user,1,0,0,0
+access_sm_report_template_field_manager,sm.report.template.field.manager,model_sm_report_template_field,group_report_designer_manager,1,1,1,1
+access_sm_report_template_wizard_user,sm.report.template.wizard.user,model_sm_report_template_wizard,group_report_designer_user,1,1,1,1
+access_sm_report_template_wizard_manager,sm.report.template.wizard.manager,model_sm_report_template_wizard,group_report_designer_manager,1,1,1,1
