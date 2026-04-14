@@ -305,36 +305,36 @@
 <section class="oe_container" style="padding: 30px 0;">
     <div class="oe_row oe_spaced">
         <div class="oe_span12">
-            <div style="max-width: 800px; margin: 0 auto; background: #263238; border-radius: 12px; padding: 30px 35px; color: #ECEFF1; font-family: 'Courier New', monospace; font-size: 14px; line-height: 2.4; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-                <span style="color: #80CBC4;">// Simple placeholder</span><br/>
-                <code style="color: #FFD54F;">{{name}}</code> <span style="color: #90A4AE;">&rarr;</span> record field value<br/><br/>
+            <div style="max-width: 800px; margin: 0 auto; background: #f5f7fa; border: 1px solid #e0e4e8; border-radius: 12px; padding: 30px 35px; color: #333; font-family: 'Courier New', monospace; font-size: 14px; line-height: 2.4;">
+                <span style="color: #6a737d; font-style: italic;">// Simple placeholder</span><br/>
+                <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{name}}</code> <span style="color: #666;">&rarr;</span> <span style="color: #333;">record field value</span><br/><br/>
 
-                <span style="color: #80CBC4;">// Relational field (dot notation)</span><br/>
-                <code style="color: #FFD54F;">{{partner_id.name}}</code> <span style="color: #90A4AE;">&rarr;</span> related record value<br/><br/>
+                <span style="color: #6a737d; font-style: italic;">// Relational field (dot notation)</span><br/>
+                <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{partner_id.name}}</code> <span style="color: #666;">&rarr;</span> <span style="color: #333;">related record value</span><br/><br/>
 
-                <span style="color: #80CBC4;">// Format pipes</span><br/>
-                <code style="color: #FFD54F;">{{amount_total|currency}}</code> <span style="color: #90A4AE;">&rarr;</span> Rp 15,000,000.50<br/>
-                <code style="color: #FFD54F;">{{date_order|date}}</code> <span style="color: #90A4AE;">&rarr;</span> 04/14/2026<br/>
-                <code style="color: #FFD54F;">{{name|upper}}</code> <span style="color: #90A4AE;">&rarr;</span> S00001<br/><br/>
+                <span style="color: #6a737d; font-style: italic;">// Format pipes</span><br/>
+                <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{amount_total|currency}}</code> <span style="color: #666;">&rarr;</span> <span style="color: #333;">Rp 15,000,000.50</span><br/>
+                <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{date_order|date}}</code> <span style="color: #666;">&rarr;</span> <span style="color: #333;">04/14/2026</span><br/>
+                <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{name|upper}}</code> <span style="color: #666;">&rarr;</span> <span style="color: #333;">S00001</span><br/><br/>
 
-                <span style="color: #80CBC4;">// Python expression</span><br/>
-                <code style="color: #FFD54F;">{{=amount_untaxed * 0.11}}</code> <span style="color: #90A4AE;">&rarr;</span> calculated value<br/>
-                <code style="color: #FFD54F;">{{=round(amount_total * 0.1, 2)}}</code> <span style="color: #90A4AE;">&rarr;</span> rounded<br/><br/>
+                <span style="color: #6a737d; font-style: italic;">// Python expression</span><br/>
+                <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{=amount_untaxed * 0.11}}</code> <span style="color: #666;">&rarr;</span> <span style="color: #333;">calculated value</span><br/>
+                <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{=round(amount_total * 0.1, 2)}}</code> <span style="color: #666;">&rarr;</span> <span style="color: #333;">rounded</span><br/><br/>
 
-                <span style="color: #80CBC4;">// Conditional block</span><br/>
-                <code style="color: #FFD54F;">{{#if amount_tax}}</code><br/>
-                <span style="color: #ECEFF1;">&nbsp;&nbsp;Tax: </span><code style="color: #FFD54F;">{{amount_tax}}</code><br/>
-                <code style="color: #FFD54F;">{{#else}}</code><br/>
-                <span style="color: #ECEFF1;">&nbsp;&nbsp;No tax applied.</span><br/>
-                <code style="color: #FFD54F;">{{/if}}</code><br/><br/>
+                <span style="color: #6a737d; font-style: italic;">// Conditional block</span><br/>
+                <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{#if amount_tax}}</code><br/>
+                <span style="color: #333;">&nbsp;&nbsp;Tax: </span><code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{amount_tax}}</code><br/>
+                <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{#else}}</code><br/>
+                <span style="color: #333;">&nbsp;&nbsp;No tax applied.</span><br/>
+                <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{/if}}</code><br/><br/>
 
-                <span style="color: #80CBC4;">// Table loop (One2many)</span><br/>
-                <code style="color: #FFD54F;">{{#order_line}}</code><br/>
-                <span style="color: #ECEFF1;">&nbsp;&nbsp;</span><code style="color: #FFD54F;">{{product_id}}</code> | <code style="color: #FFD54F;">{{product_uom_qty}}</code> | <code style="color: #FFD54F;">{{price_subtotal|currency}}</code><br/>
-                <code style="color: #FFD54F;">{{/order_line}}</code><br/><br/>
+                <span style="color: #6a737d; font-style: italic;">// Table loop (One2many)</span><br/>
+                <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{#order_line}}</code><br/>
+                <span style="color: #333;">&nbsp;&nbsp;</span><code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{product_id}}</code> <span style="color: #333;">|</span> <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{product_uom_qty}}</code> <span style="color: #333;">|</span> <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{price_subtotal|currency}}</code><br/>
+                <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{/order_line}}</code><br/><br/>
 
-                <span style="color: #80CBC4;">// Image from binary field</span><br/>
-                <code style="color: #FFD54F;">{{img:company_id.logo}}</code> <span style="color: #90A4AE;">&rarr;</span> embedded image
+                <span style="color: #6a737d; font-style: italic;">// Image from binary field</span><br/>
+                <code style="color: #d63384; background: #fce4ec; padding: 2px 6px; border-radius: 4px;">{{img:company_id.logo}}</code> <span style="color: #666;">&rarr;</span> <span style="color: #333;">embedded image</span>
             </div>
         </div>
     </div>
