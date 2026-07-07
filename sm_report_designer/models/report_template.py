@@ -1847,8 +1847,8 @@ class SmReportTemplate(models.Model):
             vals['state'] = 'draft'
         return super().write(vals)
 
-    @api.ondelete(at_uninstall=False)
-    def _unlink_check(self):
+    def unlink(self):
         for rec in self:
             if rec.server_action_id:
                 rec.server_action_id.sudo().unlink()
+        return super(SmReportTemplate, self).unlink()
