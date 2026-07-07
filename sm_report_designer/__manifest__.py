@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Report Designer - Word & Excel Template Engine',
-    'version': '18.0.3.0.0',
+    'version': '14.0.3.0.0',
     'category': 'Productivity',
-    'summary': 'Design Odoo 18 reports from Word (.docx) and Excel (.xlsx) templates — no developer needed',
+    'summary': 'Design Odoo 14 reports from Word (.docx) and Excel (.xlsx) templates — no developer needed',
     'description': """
-Report Designer - Word & Excel Template Engine (Odoo 18)
+Report Designer - Word & Excel Template Engine (Odoo 14)
 ========================================================
 
-Fully compatible with **Odoo 18** Community and Enterprise.
+Fully compatible with **Odoo 14** Community and Enterprise.
 
 Let functional users create professional reports without coding.
 Upload a Word or Excel template, map placeholders to Odoo fields,
